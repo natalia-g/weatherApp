@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="weather, forecast" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js" async></script>                
+</head>
+<body>
+    <div id="search-box">
+        <input type="text" placeholder="City" id="search-text" class="searching">
+        <button id="button" class="searching">Search</button>
+    </div>
+    <div id="weather-box">
+        <div id="weather">
+            <h1 id="city-name"></h1>
+            <div id="main-info">
+                <div id="temperature"></div>
+                <div id="description"></div>
+            </div>
+            <hr>
+            <div id="wind" class="more-info"></div>
+            <div id="humidity" class="more-info"></div>
+            <div id="pressure" class="more-info"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-image: url('/images/default.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#weather-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    color: #f7fbfc;
+    visibility: hidden;
+}
+
+#search-box {
+    padding: 15px;
+}
+#search-text {
+    width: 200px;
+}
+#button {
+    
+}
+.searching {
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+#main-info {
+    display: block;
+    margin-bottom: 20px;
+}
+#main-info div {
+    display: inline-block;
+}
+#description {
+ 
+}
+#temperature {
+  
+}
+.more-info {
+    
+}
+hr {
+    margin-bottom: 20px;
+}
