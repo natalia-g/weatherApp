@@ -2,7 +2,7 @@ let appId = '30fe48c94183f25a5cf5b5a1d8357fc2';
 let unit = 'metric';
 
 function search(searchText){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchText}&APPID=${appId}&units=${unit}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchText}&APPID=${appId}&units=${unit}`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
