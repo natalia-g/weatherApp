@@ -12,25 +12,25 @@ function search(searchText){
 function init(fromServer){
     switch (fromServer.weather[0].main) {
         case 'Clear':
-            document.body.style.backgroundImage = 'url("/images/clear.jpg")';
+            document.body.style.backgroundImage = 'url("images/clear.jpg")';
             break;
 
         case 'Thunderstorm':
-            document.body.style.backgroundImage = 'url("/images/thunderstorm.jpg")';
+            document.body.style.backgroundImage = 'url("images/thunderstorm.jpg")';
             break;
 
         case 'Clouds':
-            document.body.style.backgroundImage = 'url("/images/clouds.jpg")';
+            document.body.style.backgroundImage = 'url("images/clouds.jpg")';
             break;
 
         case 'Snow':
-            document.body.style.backgroundImage = 'url("/images/snow.jpg")';
+            document.body.style.backgroundImage = 'url("images/snow.jpg")';
             break;      
 
         case 'Rain':
         case 'Mist':
         case 'Drizzle':  
-            document.body.style.backgroundImage = 'url("/images/rain.jpg")';      
+            document.body.style.backgroundImage = 'url("images/rain.jpg")';      
             break;
 
         default:
