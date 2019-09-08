@@ -45,7 +45,7 @@ function init(fromServer){
     let pressure = document.getElementById('pressure');
     let icon = document.getElementById('icon');
 
-    icon.src = 'http://openweathermap.org/img/w/' + fromServer.weather[0].icon + '.png';
+    icon.src = 'https://openweathermap.org/img/w/' + fromServer.weather[0].icon + '.png';
 
     let resultDescription = fromServer.weather[0].description;
     description.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
