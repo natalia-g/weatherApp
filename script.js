@@ -43,6 +43,9 @@ function init(fromServer){
     let wind = document.getElementById('wind');
     let city = document.getElementById('city-name');
     let pressure = document.getElementById('pressure');
+    let icon = document.getElementById('icon');
+
+    icon.src = 'http://openweathermap.org/img/w/' + fromServer.weather[0].icon + '.png';
 
     let resultDescription = fromServer.weather[0].description;
     description.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
@@ -58,12 +61,14 @@ function init(fromServer){
 
  function setBoxPosition() {
     let weatherBox = document.getElementById('weather-box');
+    let headerBox = document.getElementById('header');
     let weatherBoxHeight = weatherBox.clientHeight;
     let weatherBoxWidth = weatherBox.clientWidth;
 
     weatherBox.style.left = `calc(50% - ${weatherBoxWidth/2}px)`;
     weatherBox.style.top = `calc(50% - ${weatherBoxHeight/2}px)`;
     weatherBox.style.visibility = 'visible';
+    headerBox.style.visibility = 'hidden';
 }
 
 

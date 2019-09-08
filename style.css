@@ -2,14 +2,14 @@ body {
     background-image: url('/images/default.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 #weather-box {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 5px black;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 15px;
     position: absolute;
     color: #f7fbfc;
     visibility: hidden;
@@ -17,35 +17,57 @@ body {
 
 #search-box {
     padding: 15px;
+    display: flex;
+    justify-content: center;
 }
+
 #search-text {
-    width: 200px;
+    width: 300px;
 }
-#button {
-    
-}
+
 .searching {
     box-shadow: 2px 2px 5px black;
     border: none;
     border-radius: 5px;
     padding: 5px;
 }
+
 #main-info {
     display: block;
     margin-bottom: 20px;
+    font-size: 26px;
 }
+
 #main-info div {
     display: inline-block;
 }
+
 #description {
- 
+    padding-left: 5px;
 }
+
 #temperature {
-  
+  padding: 15px;
 }
-.more-info {
-    
-}
+
 hr {
     margin-bottom: 20px;
+}
+
+#header {
+   position: absolute;
+   top: 250px;
+   left: 410px;
+}
+
+#header-text {
+    font-size: 68px;
+    color:  #f7fbfc;
+}
+
+#city-name {
+    font-size: 44px;
+    text-align: center;
+    font-family: 'Hepta Slab', serif;
+    color:  #f7fbfc;
 }
